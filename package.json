@@ -1,0 +1,22 @@
+{
+  "name": "api-testing-report",
+  "version": "1.0.0",
+  "description": "Testing report using mochawesome",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha ./specs/**/*.spec.js --reporter mochawesome --reporter-option reportDir=reportsHistory,reportFilename=[datetime]_[status]_report"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "@reportportal/agent-js-mocha": "^5.0.4",
+    "ajv": "^8.13.0",
+    "chai": "^5.1.0",
+    "chai-json-schema-ajv": "^5.2.4",
+    "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
+    "supertest": "^7.0.0"
+  }
+}
